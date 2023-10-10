@@ -1,0 +1,42 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    //Scriptul nu este complet
+    int a, b, c, p, d;
+
+    cout<<"Masurile Dreptelor"<<endl;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+
+    if (a + b > c or b + c > a or c + a > b) {
+    if (a == b and b ==c) {
+        cout<<"Triunghiul este echilateral"<<endl;
+        cout<<"Aria triunghiului"<<" "<<a * a * sqrt(3) / 4<<endl;
+    } else {
+
+    if (a == b or b == c or c == a) {
+        if (a * a == b * b + c * c or b * b == a * a + c * c or c * c == a * a + b * b) {
+                cout<<"Triunghiul este dreptunchic isoscel"<<endl;
+
+            } else {
+                cout<<"Triunghiul este isoscel"<<endl;
+                }
+        }
+
+    }
+
+        if (a != b and b != c and c != a) {
+            cout<<"Triunghi oarecare"<<endl;
+        }
+
+    } else {
+        cout<<"Numerele"<<" "<<a<<" "<<b<<" "<<c<<" "<<"Nu sunt laturi ale unui triunghi"<<endl;
+    }
+
+    return 0;
+}
